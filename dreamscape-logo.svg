@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 35 780 250" role="img" aria-labelledby="title">
+  <title id="title">Dreamscape CON</title>
+  <defs>
+    <g id="pixels" fill="#8E6BBE">
+      <rect x="0" y="0" width="22" height="22"/>
+      <rect x="24" y="0" width="22" height="22" opacity=".55"/>
+      <rect x="0" y="24" width="22" height="22" opacity=".55"/>
+      <rect x="48" y="24" width="22" height="22"/>
+      <rect x="24" y="48" width="22" height="22"/>
+      <rect x="48" y="48" width="22" height="22" opacity=".55"/>
+    </g>
+  </defs>
+  <g transform="translate(70 150)">
+    <ellipse cx="300" cy="-5" rx="315" ry="68" transform="rotate(-8 300 -5)" fill="none" stroke="#D9C7F4" stroke-width="8"/>
+    <text x="12" y="20" font-family="URW Chancery L, Brush Script MT, cursive" font-size="112" font-style="italic" font-weight="bold" fill="#4B2D7F" stroke="#F6E9FF" stroke-width="3" paint-order="stroke">Dreamscape</text>
+    <text x="330" y="102" font-family="Montserrat, Arial, sans-serif" font-size="66" font-style="italic" font-weight="900" letter-spacing="5" fill="#4B2D7F">CON</text>
+    <use href="#pixels" transform="translate(545 66) scale(.55)"/>
+    <path d="M0-48 C5-12 12-5 48 0 C12 5 5 12 0 48 C-5 12-12 5-48 0 C-12-5-5-12 0-48Z" transform="translate(470 -65) scale(.55)" fill="#8E6BBE"/>
+  </g>
+</svg>

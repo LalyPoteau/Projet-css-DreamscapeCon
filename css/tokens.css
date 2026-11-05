@@ -1,0 +1,125 @@
+/* ==========================================================================
+   tokens.css — Design tokens (rangés dans le layer « base »)
+   --------------------------------------------------------------------------
+   Deux niveaux :
+   1. PRIMITIFS : valeurs brutes (palette, échelles). Nommés d'après ce
+      qu'ils SONT : --color-violet-600, --space-4…
+      → jamais utilisés directement dans les composants.
+   2. SÉMANTIQUES : rôles. Nommés d'après ce qu'ils FONT : --color-surface,
+      --color-accent, --space-section…
+      → les seuls utilisés dans layout.css et components.css.
+   Changer de thème = modifier les sémantiques, pas les composants.
+   Palette et rôles sémantiques de l'identité DreamscapeCon.
+   ========================================================================== */
+
+@layer base {
+  :root {
+    /* ---------- 1. Primitifs ---------------------------------------- */
+
+   /* Palette DreamscapeCon */
+   --color-deep-violet: #4B2D7F;
+   --color-dream-purple: #8E6BBE;
+   --color-soft-lavender: #C9B6FF;
+   --color-cotton-candy: #F6E9FF;
+   --color-lilac-mist: #D9C7F4;
+   --color-midnight-purple: #2A1F45;
+   --color-electric-blue: #6F8CFF;
+   --color-ice-blue: #A7E1FF;
+   --color-pastel-pink: #FFE1F0;
+   --color-dusty-lilac: #B8A7D9;
+   --color-white: #FFFFFF;
+
+    /* Échelle d'espacements (base 0.25rem) */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+
+    /* Rayons, durées, courbes */
+    --radius-s: 0.25rem;
+    --radius-m: 0.75rem;
+    --duration-fast: 150ms;
+    --duration-base: 300ms;
+    --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+    /* Typographie */
+   --font-body: "Kedebideri", sans-serif;
+   --font-display: "Fascinate", Georgia, serif;
+
+    /* ---------- 2. Sémantiques -------------------------------------- */
+
+   /* Le thème clair est le défaut; la case à cocher active le thème sombre. */
+   color-scheme: light;
+
+    /* light-dark(valeur en thème clair, valeur en thème sombre) */
+   --color-page: light-dark(var(--color-cotton-candy), var(--color-midnight-purple));
+   --color-surface: light-dark(var(--color-white), var(--color-deep-violet));
+   --color-surface-raised: light-dark(var(--color-lilac-mist), var(--color-midnight-purple));
+   --color-text: light-dark(var(--color-midnight-purple), var(--color-cotton-candy));
+   --color-text-muted: light-dark(var(--color-deep-violet), var(--color-lilac-mist));
+   --color-accent: light-dark(var(--color-deep-violet), var(--color-soft-lavender));
+   --color-on-accent: light-dark(var(--color-white), var(--color-midnight-purple));
+   --color-accent-hover: var(--color-midnight-purple);
+   --color-on-accent-hover: var(--color-white);
+   --color-text-accent: light-dark(var(--color-dream-purple), var(--color-lilac-mist));
+   --color-text-muted-accent: light-dark(var(--color-deep-violet), var(--color-lilac-mist));
+   --color-hero: var(--color-midnight-purple);
+   --color-hero-text: var(--color-white);
+   --color-hero-muted: var(--color-lilac-mist);
+   --color-hero-eyebrow: var(--color-soft-lavender);
+   --color-hero-eyebrow-text: var(--color-midnight-purple);
+   --color-hero-emphasis: var(--color-soft-lavender);
+   --color-hero-action: var(--color-pastel-pink);
+   --color-hero-action-text: var(--color-deep-violet);
+   --color-hero-frame: var(--color-dream-purple);
+   --color-hero-portal: var(--color-deep-violet);
+   --color-hero-portal-glow: color-mix(in srgb, var(--color-deep-violet), var(--color-soft-lavender) 28%);
+   --color-hero-inner-line: rgb(255 255 255 / 0.16);
+   --color-hero-orbit: rgb(246 233 255 / 0.75);
+   --color-hero-orbit-glow: rgb(201 182 255 / 0.18);
+   --color-hero-orbit-shadow: rgb(201 182 255 / 0.1);
+   --color-hero-shadow: rgb(16 9 31 / 0.24);
+   --color-hero-inner-shadow: rgb(255 255 255 / 0.2);
+   --color-star-pink: var(--color-pastel-pink);
+   --color-star-lilac: var(--color-soft-lavender);
+   --color-star-blue: var(--color-ice-blue);
+   --color-programme-first: var(--color-dream-purple);
+   --color-programme-second: var(--color-pastel-pink);
+   --color-programme-third: var(--color-ice-blue);
+   --color-programme-alt-surface: color-mix(in srgb, var(--color-surface), var(--color-ice-blue) 14%);
+   --color-portrait-ali: var(--color-pastel-pink);
+   --color-portrait-milo: var(--color-ice-blue);
+   --color-portrait-naya: var(--color-soft-lavender);
+   --color-portrait-eden: var(--color-electric-blue);
+   --color-portrait-kitsune: var(--color-lilac-mist);
+   --color-portrait-luna: var(--color-dream-purple);
+   --color-portrait-star: var(--color-white);
+   --color-border: light-dark(var(--color-lilac-mist), var(--color-dream-purple));
+   --color-highlight: light-dark(var(--color-pastel-pink), var(--color-dream-purple));
+   --color-featured-surface: light-dark(var(--color-lilac-mist), var(--color-midnight-purple));
+   --color-ticket-badge: var(--color-deep-violet);
+   --color-ticket-badge-text: var(--color-white);
+   --color-faq-hover: color-mix(in srgb, var(--color-page), var(--color-soft-lavender) 22%);
+   --color-button-spark: var(--color-soft-lavender);
+   --color-spark: var(--color-ice-blue);
+    --color-focus: var(--color-accent);
+
+    /* Typographie fluide : clamp(minimum, valeur préférée, maximum) */
+    --font-size-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --font-size-h1: clamp(2.25rem, 1.5rem + 4vw, 4.5rem);
+   --font-size-h2: clamp(1.75rem, 1.3rem + 2.2vw, 3rem);
+   --font-size-h3: clamp(1.2rem, 1.05rem + 0.8vw, 1.65rem);
+
+    --space-section: clamp(var(--space-8), 5vw, var(--space-12));
+    --radius-card: var(--radius-m);
+   --space-card: clamp(var(--space-4), 3vw, var(--space-8));
+   --duration-hover: var(--duration-fast);
+  }
+
+  :root:has(#theme-toggle:checked) {
+    color-scheme: dark;
+  }
+}

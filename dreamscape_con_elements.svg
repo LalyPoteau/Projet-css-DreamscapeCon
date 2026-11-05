@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Dreamscape CON — éléments graphiques vectoriels</title>
+  <desc>Planche vectorielle transparente d'éléments Y2K célestes : étoiles, orbites, lune, pixels, nœud, cœur, nuage, éclats et logos.</desc>
+  <defs>
+    <linearGradient id="lavender" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9C7F4"/><stop offset="1" stop-color="#8E6BBE"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6E9FF"/><stop offset="1" stop-color="#D9C7F4"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C9B6FF"/>
+    </linearGradient>
+    <g id="star-four" fill="currentColor">
+      <path d="M0-48 C5-12 12-5 48 0 C12 5 5 12 0 48 C-5 12-12 5-48 0 C-12-5-5-12 0-48Z"/>
+    </g>
+    <g id="star-twinkle" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round">
+      <path d="M0-42 8-8 42 0 8 8 0 42 -8 8 -42 0 -8-8Z"/>
+    </g>
+    <g id="star-outline" fill="url(#shine)" stroke="#4B2D7F" stroke-width="5" stroke-linejoin="round">
+      <path d="M0-62 14-15 62 0 14 15 0 62 -14 15 -62 0 -14-15Z"/>
+    </g>
+    <g id="orbit-star">
+      <ellipse cx="0" cy="0" rx="94" ry="30" transform="rotate(-24)" fill="none" stroke="#8E6BBE" stroke-width="7"/>
+      <path d="M0-60 14-14 60 0 14 14 0 60 -14 14 -60 0 -14-14Z" fill="url(#lavender)" stroke="#4B2D7F" stroke-width="5" stroke-linejoin="round"/>
+      <circle cx="-84" cy="-38" r="7" fill="#F6E9FF"/><circle cx="81" cy="35" r="6" fill="#4B2D7F"/>
+    </g>
+    <g id="pixel-cluster" fill="#8E6BBE">
+      <rect x="0" y="0" width="22" height="22"/><rect x="24" y="0" width="22" height="22" opacity=".55"/>
+      <rect x="0" y="24" width="22" height="22" opacity=".55"/><rect x="48" y="24" width="22" height="22"/>
+      <rect x="24" y="48" width="22" height="22"/><rect x="48" y="48" width="22" height="22" opacity=".55"/>
+    </g>
+    <g id="crescent" fill="#4B2D7F">
+      <path d="M30-58 A66 66 0 1 0 30 58 A51 51 0 0 1 30-58Z"/>
+      <path d="M-39-43  -34-58 -29-43 -14-38 -29-33 -34-18 -39-33 -54-38Z" fill="#8E6BBE"/>
+    </g>
+    <g id="bow" fill="url(#lavender)" stroke="#4B2D7F" stroke-width="5" stroke-linejoin="round">
+      <path d="M-7-2 C-58-62-100-35-81 4 C-65 34-28 19-7 5Z"/>
+      <path d="M7-2 C58-62 100-35 81 4 C65 34 28 19 7 5Z"/>
+      <path d="M-8 8 -30 70 -3 54 0 18 3 54 30 70 8 8Z"/>
+      <ellipse cx="0" cy="0" rx="15" ry="18" fill="#F6E9FF"/>
+    </g>
+    <g id="heart" fill="url(#pink)" stroke="#8E6BBE" stroke-width="5">
+      <path d="M0 54 C-16 38-61 8-61-25 C-61-62-13-69 0-34 C13-69 61-62 61-25 C61 8 16 38 0 54Z"/>
+    </g>
+    <g id="cloud" fill="#D9C7F4" stroke="#8E6BBE" stroke-width="5" stroke-linejoin="round">
+      <path d="M-70 25 C-91-9-62-42-28-34 C-12-74 43-68 52-30 C91-34 103 15 72 31 L-58 31Z"/>
+    </g>
+    <g id="sparkle-trail" fill="none" stroke="#8E6BBE" stroke-width="7" stroke-linecap="round">
+      <path d="M-110 26 C-50-18 18-20 110-54"/><path d="M-78 49 C-26 10 28 3 80-14" stroke="#D9C7F4" stroke-width="15"/>
+      <path d="M-110 26 C-50-18 18-20 110-54"/>
+    </g>
+  </defs>
+
+  <!-- Wordmark: editable vector text -->
+  <g id="logo-text" transform="translate(70 150)">
+    <ellipse cx="300" cy="-5" rx="315" ry="68" transform="rotate(-8 300 -5)" fill="none" stroke="#D9C7F4" stroke-width="8"/>
+    <text x="12" y="20" font-family="URW Chancery L, Brush Script MT, cursive" font-size="112" font-style="italic" font-weight="bold" fill="#4B2D7F" stroke="#F6E9FF" stroke-width="3" paint-order="stroke">Dreamscape</text>
+    <text x="330" y="102" font-family="Montserrat, Arial, sans-serif" font-size="66" font-style="italic" font-weight="900" letter-spacing="5" fill="#4B2D7F">CON</text>
+    <use xlink:href="#pixel-cluster" transform="translate(545 66) scale(.55)"/>
+    <use xlink:href="#star-four" transform="translate(470 -65) scale(.55)" style="color:#8E6BBE"/>
+  </g>
+
+  <!-- Standalone icon -->
+  <g id="logo-icon" transform="translate(930 145) scale(1.05)">
+    <ellipse cx="0" cy="0" rx="115" ry="48" transform="rotate(-24)" fill="none" stroke="#8E6BBE" stroke-width="8"/>
+    <path d="M0-100 22-25 100 0 22 25 0 100 -22 25 -100 0 -22-25Z" fill="url(#lavender)" stroke="#4B2D7F" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M0-65 12-13 65 0 12 13 0 65 -12 13 -65 0 -12-13Z" fill="#F6E9FF" opacity=".8"/>
+    <use xlink:href="#pixel-cluster" transform="translate(83 74) scale(.42)"/>
+  </g>
+
+  <!-- Decorative assets, each in its own group for easy extraction -->
+  <g id="star-solid" transform="translate(130 390) scale(.78)" style="color:#4B2D7F"><use xlink:href="#star-four"/></g>
+  <g id="star-lilac" transform="translate(300 390) scale(.78)" style="color:#C9B6FF"><use xlink:href="#star-four"/></g>
+  <g id="star-outline-sample" transform="translate(475 390) scale(.72)"><use xlink:href="#star-outline"/></g>
+  <g id="star-twinkle-sample" transform="translate(640 390) scale(.78)" style="color:#8E6BBE"><use xlink:href="#star-twinkle"/></g>
+  <g id="orbit-star-sample" transform="translate(900 390) scale(.72)"><use xlink:href="#orbit-star"/></g>
+
+  <g id="crescent-sample" transform="translate(125 600) scale(.9)"><use xlink:href="#crescent"/></g>
+  <g id="bow-sample" transform="translate(330 585) scale(.9)"><use xlink:href="#bow"/></g>
+  <g id="pixel-sample" transform="translate(500 555) scale(1.35)"><use xlink:href="#pixel-cluster"/></g>
+  <g id="heart-sample" transform="translate(700 580) scale(.72)"><use xlink:href="#heart"/></g>
+  <g id="cloud-sample" transform="translate(925 580) scale(.82)"><use xlink:href="#cloud"/></g>
+  <g id="sparkle-trail-sample" transform="translate(190 780) scale(.8)"><use xlink:href="#sparkle-trail"/></g>
+  <g id="orbit-ring" transform="translate(560 780)">
+    <ellipse cx="0" cy="0" rx="115" ry="37" transform="rotate(-18)" fill="none" stroke="#8E6BBE" stroke-width="8"/>
+    <circle cx="-102" cy="-34" r="10" fill="#4B2D7F"/><circle cx="100" cy="32" r="8" fill="#C9B6FF"/>
+  </g>
+  <g id="four-point-burst" transform="translate(850 780)">
+    <use xlink:href="#star-four" transform="scale(.55)" style="color:#4B2D7F"/>
+    <use xlink:href="#star-four" transform="translate(70 -40) scale(.18)" style="color:#C9B6FF"/>
+    <use xlink:href="#star-four" transform="translate(-65 48) scale(.22)" style="color:#8E6BBE"/>
+  </g>
+  <g id="pixel-sparkle" transform="translate(1050 755)">
+    <use xlink:href="#pixel-cluster" transform="scale(.9)"/>
+    <use xlink:href="#star-four" transform="translate(85 -35) scale(.28)" style="color:#4B2D7F"/>
+  </g>
+</svg>

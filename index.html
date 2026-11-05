@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DreamscapeCon — Convention cosplay &amp; culture pop</title>
+  <meta name="description" content="Deux jours pour entrer dans vos univers préférés : cosplay, culture pop, rencontres et expériences immersives à Lille.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fascinate&family=Kedebideri&display=swap">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#accueil" class="logo" aria-label="DreamscapeCon, accueil">
+      <img class="logo__image" src="dreamscape-logo.svg" alt="">
+    </a>
+    <input class="theme-checkbox" type="checkbox" id="theme-toggle">
+    <label class="theme-toggle" for="theme-toggle">
+      <span class="theme-toggle__light"><span aria-hidden="true">☾</span> Thème sombre</span>
+      <span class="theme-toggle__dark"><span aria-hidden="true">☀</span> Thème clair</span>
+    </label>
+    <input class="menu-checkbox" type="checkbox" id="menu-toggle" aria-label="Afficher le menu principal" aria-controls="site-nav">
+    <label class="menu-toggle" for="menu-toggle">
+      <span class="menu-toggle__icon" aria-hidden="true"></span>
+    </label>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="#programme">Programme</a>
+      <a href="#intervenants">Invités</a>
+      <a href="#billetterie">Billetterie</a>
+      <a href="#faq">FAQ</a>
+      <a class="site-nav__ticket" href="#billetterie">Prendre mon billet <span aria-hidden="true">✦</span></a>
+    </nav>
+    <a class="btn btn--header" href="#billetterie">Prendre mon billet <span class="btn__spark" aria-hidden="true">✦</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="accueil" aria-labelledby="hero-titre">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Cosplay <span aria-hidden="true">•</span> Culture <span aria-hidden="true">•</span> Imaginaire</p>
+        <h1 id="hero-titre">Dreamscape <span>CON</span></h1>
+        <p class="hero__date"><time datetime="2027-06-12">12</time> — <time datetime="2027-06-13">13 juin 2027</time> <span aria-hidden="true">·</span> Lille Grand Palais</p>
+        <p class="hero__lead">Deux jours pour entrer dans vos univers préférés.</p>
+        <p class="hero__description">Cosplay, pop culture, rencontres et expériences immersives : réunissons les mondes qui nous font rêver.</p>
+        <a href="#billetterie" class="btn btn--hero">Découvrir la billetterie <span aria-hidden="true">↗</span></a>
+      </div>
+      <img class="hero__edge-star" src="dreamscape-star.svg" alt="" aria-hidden="true">
+      <figure class="hero__visual">
+        <span class="hero__orbit" aria-hidden="true"></span>
+        <span class="hero__star hero__star--main" aria-hidden="true"></span>
+        <span class="hero__star hero__star--small" aria-hidden="true"></span>
+        <span class="hero__star hero__star--blue" aria-hidden="true"></span>
+        <figcaption>Un portail vers vos mondes préférés</figcaption>
+      </figure>
+    </section>
+
+    <section id="programme" class="section programme" aria-labelledby="programme-titre">
+      <header class="programme__heading">
+        <p class="programme__eyebrow">Le rendez-vous</p>
+        <h2 id="programme-titre">Un week-end, mille univers</h2>
+        <p class="programme__intro">Deux journées, deux programmes à vivre sur trois scènes.</p>
+      </header>
+      <section class="programme__day programme__day--samedi" aria-labelledby="samedi-titre">
+        <h3 id="samedi-titre">Samedi <time datetime="2027-06-12">12 juin</time></h3>
+        <ul class="programme__list">
+          <li class="programme__slot">
+            <time class="programme__time" datetime="2027-06-12T10:00">10:00</time>
+            <div class="programme__details"><h4>Ouverture des portes</h4><p class="programme__venue">Scène Nova</p><p>Accueil et découverte de la convention.</p></div>
+          </li>
+          <li class="programme__slot">
+            <time class="programme__time" datetime="2027-06-12T11:00">11:00</time>
+            <div class="programme__details"><h4>Défilé cosplay</h4><p class="programme__venue">Main Stage</p><p>Les cosplayers présentent leurs créations.</p></div>
+          </li>
+          <li class="programme__slot">
+            <time class="programme__time" datetime="2027-06-12T12:30">12:30</time>
+            <div class="programme__details"><h4>Atelier accessoires</h4><p class="programme__venue">Studio Créatif</p><p>Fabrique ton premier accessoire de cosplay.</p></div>
+          </li>
+        </ul>
+      </section>
+      <section class="programme__day programme__day--dimanche" aria-labelledby="dimanche-titre">
+        <h3 id="dimanche-titre">Dimanche <time datetime="2027-06-13">13 juin</time></h3>
+        <ul class="programme__list">
+          <li class="programme__slot">
+            <time class="programme__time" datetime="2027-06-13T10:30">10:30</time>
+            <div class="programme__details"><h4>Rencontre avec les invités</h4><p class="programme__venue">Scène Nova</p><p>Questions, échanges et photos avec les invités.</p></div>
+          </li>
+          <li class="programme__slot">
+            <time class="programme__time" datetime="2027-06-13T14:00">14:00</time>
+            <div class="programme__details"><h4>Just Dance showcase</h4><p class="programme__venue">Pixel Arena</p><p>Danse et performances en live.</p></div>
+          </li>
+          <li class="programme__slot">
+            <time class="programme__time" datetime="2027-06-13T16:00">16:00</time>
+            <div class="programme__details"><h4>Concours cosplay</h4><p class="programme__venue">Main Stage</p><p>Finale et remise des prix du concours.</p></div>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="intervenants" class="section speakers" aria-labelledby="intervenants-titre">
+      <header class="speakers__heading">
+        <p class="speakers__eyebrow">Les univers se rencontrent</p>
+        <h2 id="intervenants-titre">Invités &amp; créateurs</h2>
+        <p>Six profils à découvrir.</p>
+      </header>
+      <ul class="speakers__list" aria-label="Invités et créateurs">
+        <li class="speakers__item"><article class="speaker-card" aria-labelledby="speaker-ali">
+          <figure class="speaker-card__portrait speaker-card__portrait--pink" role="img" aria-label="Illustration rose poudré avec une étoile, portrait graphique d'Ali Hoshino"><span aria-hidden="true">✦</span></figure>
+          <h3 id="speaker-ali">Ali Hoshino</h3><p class="speaker-card__role">Cosplayeuse invitée</p>
+          <p>Ali imagine des costumes fantasy aux détails minutieux. Elle transforme des matières simples en armures et accessoires qui racontent l’histoire d’un personnage.</p>
+          <a class="speaker-card__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Découvrir son univers <span aria-hidden="true">↗</span></a>
+        </article></li>
+        <li class="speakers__item"><article class="speaker-card" aria-labelledby="speaker-milo">
+          <figure class="speaker-card__portrait speaker-card__portrait--blue" role="img" aria-label="Illustration bleu glacé avec une étoile, portrait graphique de Milo K."><span aria-hidden="true">✦</span></figure>
+          <h3 id="speaker-milo">Milo K.</h3><p class="speaker-card__role">Photographe cosplay</p>
+          <p>Milo compose des portraits inspirés du cinéma et du jeu vidéo. Il travaille la lumière, les couleurs et les décors pour donner à chaque séance une atmosphère singulière.</p>
+          <a class="speaker-card__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Découvrir son univers <span aria-hidden="true">↗</span></a>
+        </article></li>
+        <li class="speakers__item"><article class="speaker-card" aria-labelledby="speaker-naya">
+          <figure class="speaker-card__portrait speaker-card__portrait--lavender" role="img" aria-label="Illustration lavande avec une étoile, portrait graphique de Naya Pixel"><span aria-hidden="true">✦</span></figure>
+          <h3 id="speaker-naya">Naya Pixel</h3><p class="speaker-card__role">Artiste &amp; illustratrice</p>
+          <p>Naya dessine des personnages expressifs et des mondes hauts en couleur. Son travail mêle illustration digitale, character design et références à la pop culture.</p>
+          <a class="speaker-card__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Découvrir son univers <span aria-hidden="true">↗</span></a>
+        </article></li>
+        <li class="speakers__item"><article class="speaker-card" aria-labelledby="speaker-eden">
+          <figure class="speaker-card__portrait speaker-card__portrait--electric" role="img" aria-label="Illustration bleu électrique avec une étoile, portrait graphique d'Eden Valkyrie"><span aria-hidden="true">✦</span></figure>
+          <h3 id="speaker-eden">Eden Valkyrie</h3><p class="speaker-card__role">Cosplayeur invité</p>
+          <p>Eden associe jeu scénique et fabrication de props pour incarner des héros fantastiques. Il partage ses techniques de construction et ses conseils pour préparer une performance.</p>
+          <a class="speaker-card__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Découvrir son univers <span aria-hidden="true">↗</span></a>
+        </article></li>
+        <li class="speakers__item"><article class="speaker-card" aria-labelledby="speaker-kitsune">
+          <figure class="speaker-card__portrait speaker-card__portrait--mist" role="img" aria-label="Illustration lilas clair avec une étoile, portrait graphique du Studio Kitsune"><span aria-hidden="true">✦</span></figure>
+          <h3 id="speaker-kitsune">Studio Kitsune</h3><p class="speaker-card__role">Collectif créatif</p>
+          <p>Le collectif réunit des passionné·es de couture et d’accessoires. Découvre des techniques accessibles pour personnaliser une tenue et fabriquer tes propres détails de cosplay.</p>
+          <a class="speaker-card__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Découvrir leur univers <span aria-hidden="true">↗</span></a>
+        </article></li>
+        <li class="speakers__item"><article class="speaker-card" aria-labelledby="speaker-luna">
+          <figure class="speaker-card__portrait speaker-card__portrait--purple" role="img" aria-label="Illustration violette avec une étoile, portrait graphique de Luna Sora"><span aria-hidden="true">✦</span></figure>
+          <h3 id="speaker-luna">Luna Sora</h3><p class="speaker-card__role">Animatrice &amp; maîtresse de cérémonie</p>
+          <p>Luna accompagne les concours, les annonces et les rencontres sur scène. Sa bonne humeur relie les temps forts du week-end et met les participant·es à l’aise.</p>
+          <a class="speaker-card__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Découvrir son univers <span aria-hidden="true">↗</span></a>
+        </article></li>
+      </ul>
+    </section>
+
+    <!-- ============================================================
+         BILLETTERIE : ≥ 3 offres (prix, contenu, bouton), une offre
+         mise en avant. Exigence 4 : idéal pour :has(), ex.
+         .offer:has(.offer__badge) { … }
+         ============================================================ -->
+    <section id="billetterie" class="section ticketing" aria-labelledby="billetterie-titre">
+      <header class="ticketing__heading">
+        <p class="ticketing__eyebrow">Choisissez votre expérience</p>
+        <h2 id="billetterie-titre">Billetterie <span aria-hidden="true">✦</span></h2>
+        <p>Trois formules pour profiter de DreamscapeCon à votre rythme.</p>
+      </header>
+      <ul class="ticketing__list" aria-label="Offres de billets">
+        <li class="ticketing__item">
+          <article class="ticket-card" aria-labelledby="pass-journee">
+            <h3 id="pass-journee">Pass journée</h3>
+            <p class="ticket-card__price"><span class="u-visually-hidden">Prix : </span>18 €</p>
+            <p class="ticket-card__details">Accès pour une journée aux scènes, animations et espaces exposants.</p>
+            <p class="ticket-card__note">Pour découvrir la convention à ton rythme.</p>
+            <a class="btn ticket-card__action" href="mailto:bonjour@dreamscape-con.example?subject=R%C3%A9servation%20Pass%20journ%C3%A9e">Choisir cette offre <span aria-hidden="true">↗</span></a>
+          </article>
+        </li>
+        <li class="ticketing__item">
+          <article class="ticket-card" aria-labelledby="pass-weekend">
+            <p class="ticket-card__badge">Le plus populaire</p>
+            <h3 id="pass-weekend">Pass week-end</h3>
+            <p class="ticket-card__price"><span class="u-visually-hidden">Prix : </span>30 €</p>
+            <p class="ticket-card__details">Accès aux deux jours, aux scènes, animations et concours.</p>
+            <p class="ticket-card__note">Le meilleur de l’événement, sans rien manquer.</p>
+            <a class="btn ticket-card__action" href="mailto:bonjour@dreamscape-con.example?subject=R%C3%A9servation%20Pass%20week-end">Choisir cette offre <span aria-hidden="true">↗</span></a>
+          </article>
+        </li>
+        <li class="ticketing__item">
+          <article class="ticket-card" aria-labelledby="pass-vip">
+            <h3 id="pass-vip">Pass VIP</h3>
+            <p class="ticket-card__price"><span class="u-visually-hidden">Prix : </span>49 €</p>
+            <p class="ticket-card__details">Deux jours d’accès, file dédiée, goodies exclusifs et rencontre avec les invités.</p>
+            <p class="ticket-card__note">Pour vivre l’expérience complète.</p>
+            <a class="btn ticket-card__action" href="mailto:bonjour@dreamscape-con.example?subject=R%C3%A9servation%20Pass%20VIP">Choisir cette offre <span aria-hidden="true">↗</span></a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================================================
+         FAQ : ≥ 5 questions en <details>/<summary> (pas de JS !).
+         Exigence 6 : une transition à l'ouverture est bienvenue.
+         ============================================================ -->
+    <section id="faq" class="section faq" aria-labelledby="faq-titre">
+      <header class="faq__heading">
+        <p class="faq__eyebrow">Besoin d’aide ?</p>
+        <h2 id="faq-titre">Questions fréquentes</h2>
+        <p>Les informations essentielles avant de préparer votre venue.</p>
+      </header>
+      <div class="faq__list">
+        <details class="faq-item" id="faq-acces">
+          <summary>Où se déroule la convention ?</summary>
+          <div class="faq-item__answer"><div><p>DreamscapeCon se déroule au Lille Grand Palais. Les détails d’accès et les informations pratiques seront communiqués avant l’événement.</p></div></div>
+        </details>
+        <details class="faq-item" id="faq-costumes">
+          <summary>Les costumes sont-ils obligatoires ?</summary>
+          <div class="faq-item__answer"><div><p>Non, le cosplay est encouragé mais reste entièrement facultatif. Chaque visiteur est le bienvenu, en costume ou non.</p></div></div>
+        </details>
+        <details class="faq-item" id="faq-securite">
+          <summary>Puis-je venir avec un accessoire cosplay ?</summary>
+          <div class="faq-item__answer"><div><p>Oui, sous réserve du règlement de sécurité de la convention. Les accessoires pourront être contrôlés à l’entrée; les objets dangereux ou réalistes sont interdits.</p></div></div>
+        </details>
+        <details class="faq-item" id="faq-billets">
+          <summary>Les billets sont-ils nominatifs ?</summary>
+          <div class="faq-item__answer"><div><p>Pour cette maquette de démonstration, les modalités de réservation sont fictives. Les conditions définitives seront précisées lors de l’ouverture de la billetterie.</p></div></div>
+        </details>
+        <details class="faq-item" id="faq-famille">
+          <summary>L’événement est-il adapté aux enfants ?</summary>
+          <div class="faq-item__answer"><div><p>Oui, un espace famille est prévu. Les informations sur les activités et les recommandations d’âge seront précisées dans le guide visiteurs.</p></div></div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__main">
+      <section class="site-footer__group" aria-labelledby="footer-contact">
+        <h2 id="footer-contact">Contact</h2>
+        <a href="mailto:bonjour@dreamscape-con.example">bonjour@dreamscape-con.example</a>
+        <a href="mailto:partenariats@dreamscape-con.example">Presse &amp; partenariats</a>
+      </section>
+      <section class="site-footer__group" aria-labelledby="footer-social">
+        <h2 id="footer-social">Suivez-nous</h2>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram · @dreamscape.con</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok · @dreamscape.con</a>
+        <a href="https://discord.com/" target="_blank" rel="noreferrer">Discord · DreamscapeCon</a>
+      </section>
+      <section class="site-footer__group" aria-labelledby="footer-info">
+        <h2 id="footer-info">Informations</h2>
+        <a href="#faq-acces">Accès &amp; horaires</a>
+        <a href="#faq-securite">Règlement visiteurs</a>
+        <a href="#faq-famille">Accessibilité &amp; espace famille</a>
+      </section>
+      <a class="site-footer__brand" href="#accueil" aria-label="DreamscapeCon, retour en haut de page">
+        <img src="dreamscape-logo.svg" alt="">
+        <span>Cosplay · Culture · Imaginaire</span>
+      </a>
+    </div>
+    <div class="site-footer__legal">
+      <p>Événement fictif — projet de conception et maquette UX/UI. Aucune billetterie réelle.</p>
+      <p>Visuels décoratifs originaux · Typographies : Fascinate et Kedebideri, via Google Fonts.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

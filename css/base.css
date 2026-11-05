@@ -1,0 +1,47 @@
+/* ==========================================================================
+   base.css — Layer « base »
+   Rôle : styles par défaut des ÉLÉMENTS HTML (body, titres, liens, focus…).
+   Pas de classes ici : seulement des sélecteurs d'éléments, :where(), :is().
+   N'utilisez que des tokens SÉMANTIQUES.
+   ========================================================================== */
+
+@layer base {
+  body {
+    background-color: var(--color-page);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: var(--font-size-h1);
+    line-height: 1.1;
+  }
+
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+
+  h2 { font-size: var(--font-size-h2); }
+  h3 { font-size: var(--font-size-h3); }
+
+  /* Exemple de :where() : spécificité nulle, facile à surcharger (exigence 4) */
+  :where(h1, h2, h3) {
+    text-wrap: balance;
+  }
+
+  a {
+    color: var(--color-accent);
+  }
+
+  /* Exigence 7 : un focus TOUJOURS visible au clavier.
+     Ne jamais supprimer l'outline sans le remplacer. */
+  :focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+
+}

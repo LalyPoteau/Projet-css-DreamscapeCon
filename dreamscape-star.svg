@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-130 -120 280 270" role="img" aria-labelledby="title">
+  <title id="title">Étoile Dreamscape</title>
+  <defs>
+    <linearGradient id="star-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9C7F4"/>
+      <stop offset="1" stop-color="#8E6BBE"/>
+    </linearGradient>
+    <g id="pixels" fill="#8E6BBE">
+      <rect x="0" y="0" width="22" height="22"/>
+      <rect x="24" y="0" width="22" height="22" opacity=".55"/>
+      <rect x="0" y="24" width="22" height="22" opacity=".55"/>
+      <rect x="48" y="24" width="22" height="22"/>
+      <rect x="24" y="48" width="22" height="22"/>
+      <rect x="48" y="48" width="22" height="22" opacity=".55"/>
+    </g>
+  </defs>
+  <ellipse cx="0" cy="0" rx="115" ry="48" transform="rotate(-24)" fill="none" stroke="#8E6BBE" stroke-width="8"/>
+  <path d="M0-100 22-25 100 0 22 25 0 100 -22 25 -100 0 -22-25Z" fill="url(#star-fill)" stroke="#4B2D7F" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M0-65 12-13 65 0 12 13 0 65 -12 13 -65 0 -12-13Z" fill="#F6E9FF" opacity=".8"/>
+  <use href="#pixels" transform="translate(83 74) scale(.42)"/>
+</svg>
