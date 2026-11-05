@@ -6,7 +6,7 @@ Site vitrine fictif de **DreamscapeCon**, convention cosplay et culture pop à L
 
 | Champ | Valeur |
 |---|---|
-| Organisation | Travail individuel (solo), à la place du trinôme prévu par l’énoncé |
+| Organisation | Travail individuel |
 | Nom de l’étudiante |Poteau Laly |
 | Événement / thème | DreamscapeCon — convention cosplay, culture pop et imaginaire |
 | Dépôt Git | Aucun lien communiqué; à compléter si nécessaire |
